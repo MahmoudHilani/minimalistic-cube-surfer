@@ -14006,7 +14006,7 @@ GameObject:
   - component: {fileID: 666928489}
   m_Layer: 0
   m_Name: InvisFloor
-  m_TagString: Untagged
+  m_TagString: InvisFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14018,7 +14018,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666928488}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -49.56751, y: -14.469288, z: 303.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -33870,7 +33870,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6681311280427272173, guid: 5d400f518eab3cf428ee2e2545f6da7c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.98
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6681311280427272173, guid: 5d400f518eab3cf428ee2e2545f6da7c, type: 3}
       propertyPath: m_LocalPosition.y
