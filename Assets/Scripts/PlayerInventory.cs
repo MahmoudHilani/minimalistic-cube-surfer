@@ -16,7 +16,6 @@ public class PlayerInventory : MonoBehaviour
     {
         Score.text = CoinNum.ToString("0");
         WinScore.text = CoinNum.ToString("0");
-        LossScore.text = CoinNum.ToString("0");
     }
     public void CoinCollected()
     {

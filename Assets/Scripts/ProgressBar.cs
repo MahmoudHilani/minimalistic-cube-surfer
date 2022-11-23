@@ -6,7 +6,7 @@ public class ProgressBar : MonoBehaviour
 {
     private Slider slider;
 
-    public float fillSpeed = 0.01f;
+    private float fillSpeed = 0.02f;
     private float targetProgress = 0;
 
     private void Awake()
@@ -21,11 +21,11 @@ public class ProgressBar : MonoBehaviour
     }
 
 
-    void Update()
+    void FixedUpdate()
     {
         if (slider.value < targetProgress)
         {
-            slider.value += fillSpeed * Time.deltaTime;
+            slider.value += fillSpeed * Time.fixedDeltaTime;
         }
     }
 

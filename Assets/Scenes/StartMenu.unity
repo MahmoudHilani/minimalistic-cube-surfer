@@ -387,10 +387,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: ec61c47f72a4c564981be003aa77248e, type: 3}
-    m_FontSize: 79
+    m_FontSize: 69
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 6
     m_MaxSize: 101
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -398,7 +398,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Red
+  m_Text: CORAL RED
 --- !u!222 &344269640
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -630,7 +630,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 853.4927, y: 401.2285}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &694108377
 MonoBehaviour:
@@ -1544,10 +1544,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: ec61c47f72a4c564981be003aa77248e, type: 3}
-    m_FontSize: 79
+    m_FontSize: 69
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 6
     m_MaxSize: 101
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1555,7 +1555,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Green
+  m_Text: OLIVE GREEN
 --- !u!222 &1586979993
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1772,10 +1772,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: ec61c47f72a4c564981be003aa77248e, type: 3}
-    m_FontSize: 79
+    m_FontSize: 69
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 6
     m_MaxSize: 101
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1783,7 +1783,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Purple
+  m_Text: ORCHID BLUE
 --- !u!222 &1691739038
 CanvasRenderer:
   m_ObjectHideFlags: 0
