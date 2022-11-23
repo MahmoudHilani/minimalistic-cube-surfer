@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-         defaultColor = FindObjectOfType<ColorController>().GetColor();
+        defaultColor = FindObjectOfType<ColorController>().GetColor();
 
 
         Character = GameObject.FindGameObjectWithTag("MainAlpha");
@@ -44,8 +44,16 @@ public class PlayerController : MonoBehaviour
             }
             if (transform.position.y <= -80)
             {
-                DeathSound.Play();
-                gameManager.LoseLevel();
+                if (DeathSound != null)
+                {
+                    DeathSound.Play();
+
+                }
+                if (gameManager != null)
+                {
+                    gameManager.LoseLevel();
+
+                }
 
             }
 
@@ -68,12 +76,13 @@ public class PlayerController : MonoBehaviour
         }
         if (other.tag == "Secret")
         {
+            GameManager gm = FindObjectOfType<GameManager>();
+            gm.CompleteLevel();
             SecretAudio.Play();
             Character.GetComponent<SkinnedMeshRenderer>().material = Secret;
             JointsAlpha.GetComponent<SkinnedMeshRenderer>().material = SecretJoint;
             FindObjectOfType<ColorController>().switchCharColors();
             Destroy(other.gameObject);
-            gameManager.CompleteLevel();
         }
 
         if (gameObject.tag == "Player")
