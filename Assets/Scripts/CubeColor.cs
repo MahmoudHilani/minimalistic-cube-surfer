@@ -3,29 +3,22 @@ using UnityEngine.UI;
 
 public class CubeColor : MonoBehaviour
 {
-    public GameObject cube;
-    public Material[] materials;
-    private int ColorValue;
-    public Renderer meshRenderer;
-    private Button button;
 
-    void Start()
+    private void FixedUpdate()
     {
-
-        meshRenderer = cube.GetComponent<MeshRenderer>();
+        if (FindObjectOfType<ColorController>().GetColor() == gameObject.GetComponent<Image>().color)
+        {
+            gameObject.GetComponent<Button>().interactable = false;
+        }
+        else
+        {
+            gameObject.GetComponent<Button>().interactable = true;
+        }
     }
 
     public void ChangeColor()
     {
-        if (button.name == "Color1")
-        {
-            meshRenderer.material = materials[1];
-        }
-
-        if (button.name == "Color2")
-        {
-            meshRenderer.material = materials[2];
-        }
+        FindObjectOfType<ColorController>().ChangeCubeColor(gameObject.GetComponent<Image>().color);
     }
 
 }

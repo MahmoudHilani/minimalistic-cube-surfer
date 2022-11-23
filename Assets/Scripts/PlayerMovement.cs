@@ -8,24 +8,29 @@ public class PlayerMovement : MonoBehaviour
     public float sideSpeed = 5f;
     private float boostTimer;
     private bool boosting;
-    
+
 
     void Start()
     {
         boostTimer = 0;
         boosting = false;
     }
+    private SwerveInputSystem _swerveInputSystem;
 
+
+    private void Awake()
+    {
+        _swerveInputSystem = GetComponent<SwerveInputSystem>();
+    }
 
     void FixedUpdate()
     {
 
         if (dead)
         {
-            
+
             return;
         }
-        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + forwardSpeed * Time.deltaTime);
 
 
         if (Input.GetKey(KeyCode.A))
@@ -47,6 +52,9 @@ public class PlayerMovement : MonoBehaviour
                 boosting = false;
             }
         }
+        float swerveAmount = Time.deltaTime * sideSpeed * _swerveInputSystem.MoveFactorX / 10;
+        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + forwardSpeed * Time.deltaTime);
+        transform.Translate(swerveAmount, 0, 0);
     }
 
     public void SpeedUp()

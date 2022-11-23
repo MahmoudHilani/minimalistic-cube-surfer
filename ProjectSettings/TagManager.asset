@@ -15,6 +15,12 @@ TagManager:
   - Death
   - End
   - InvisFloor
+  - Secret
+  - Alpha
+  - ColorController
+  - MainAlpha
+  - Joint
+  - JointsAlpha
   layers:
   - Default
   - TransparentFX

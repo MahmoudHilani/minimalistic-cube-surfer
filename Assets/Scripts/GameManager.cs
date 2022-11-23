@@ -8,11 +8,25 @@ public class GameManager : MonoBehaviour
     public float RestartDelay = 1f;
     public GameObject CompleteLevelUI;
     public GameObject LossLevelUI;
-    
+
 
     void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    private void Start()
+    {
+        GameObject.FindGameObjectWithTag("PlayerCube").GetComponent<MeshRenderer>().material.color = FindObjectOfType<ColorController>().GetColor();
+        var objects = GameObject.FindGameObjectsWithTag("PickUp");
+        foreach (var item in objects)
+        {
+            foreach (Transform cube in item.GetComponent<Transform>())
+            {
+                cube.GetComponent<MeshRenderer>().material.color = FindObjectOfType<ColorController>().GetColor();
+            }
+        }
+
     }
 
     public void CompleteLevel()

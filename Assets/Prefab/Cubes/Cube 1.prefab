@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4219390743650801701}
   m_Layer: 0
   m_Name: Cube 1
-  m_TagString: Untagged
+  m_TagString: Cube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,6 +97,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 368328399e62e774d9fea18b5ab3fc74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Win1: {fileID: 0}
+  Win2: {fileID: 0}
+  Win3: {fileID: 0}
+  Win4: {fileID: 0}
+  Win5: {fileID: 0}
+  Obstruct: {fileID: 0}
 --- !u!114 &4219390743650801688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,8 +115,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc9eacb81dac3d4fab7570401ce4cc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Character: {fileID: 0}
+  Secret: {fileID: 0}
   gameManager: {fileID: 0}
   PickUpAni: {fileID: 0}
+  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  PickUpSound: {fileID: 0}
+  CoinSound: {fileID: 0}
+  SpeedSound: {fileID: 0}
+  DeathSound: {fileID: 0}
 --- !u!65 &4219390743650801691
 BoxCollider:
   m_ObjectHideFlags: 0

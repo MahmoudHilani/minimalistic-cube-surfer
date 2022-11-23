@@ -11,6 +11,11 @@ public class DestroyCube : MonoBehaviour
     [SerializeField] private AudioSource Win4;
     [SerializeField] private AudioSource Win5;
     [SerializeField] private AudioSource Obstruct;
+
+private void Start() {
+    
+}
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Obstruction"))
@@ -23,7 +28,7 @@ public class DestroyCube : MonoBehaviour
             if (gameObject.tag == "Player")
             {
                 FindObjectOfType<GameManager>().CompleteLevel();
-                Debug.Log("KAKA");
+                
                 return;
             }
             other.tag = "Untagged";
