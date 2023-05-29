@@ -10,26 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7670dcedaa35dad46bcf6c7687c52728, type: 3}
-  m_Name: HMSAdsKitSettings
+  m_Name: HMSPluginSettings 1
   m_EditorClassIdentifier: 
   settings:
-    _keys:
-    - UseTestAds
-    - EnableBannerAd
-    - EnableInterstitialAd
-    - EnableRewardedAd
-    - EnableSplashAd
-    - ShowBannerOnLoad
-    - BannerRefreshInterval
-    - InterstitialAdID
-    - RewardedAdID
-    _values:
-    - False
-    - False
-    - True
-    - True
-    - False
-    - True
-    - 60
-    - testb4znbuh3n2
-    - testx9dtjwj8hp
+    _keys: []
+    _values: []
