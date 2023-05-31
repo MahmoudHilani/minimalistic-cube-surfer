@@ -47,4 +47,9 @@ public class PlayerInventory : MonoBehaviour
             PlayerPrefs.SetInt(HighScoreKey, HighScore);
         }
     }
+
+    public void DoubleCoins()
+    {
+        CoinNum = CoinNum * 2;
+    }
 }

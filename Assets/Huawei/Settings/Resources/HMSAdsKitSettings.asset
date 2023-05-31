@@ -23,13 +23,15 @@ MonoBehaviour:
     - BannerRefreshInterval
     - InterstitialAdID
     - RewardedAdID
+    - BannerAdID
     _values:
-    - False
-    - False
+    - True
+    - True
     - True
     - True
     - False
     - True
     - 60
-    - testb4znbuh3n2
-    - testx9dtjwj8hp
+    - n5wcdteg4j
+    - h4zccnmc2r
+    - q18g4i3pvf
